@@ -1,0 +1,19 @@
+[project]
+name = "customer-churn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tii", email = "tii@hpclab.local" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "feast>=0.59.0",
+]
+
+[project.scripts]
+customer-churn = "customer_churn:main"
+
+[build-system]
+requires = ["uv_build>=0.8.3,<0.9.0"]
+build-backend = "uv_build"
