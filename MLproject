@@ -1,0 +1,9 @@
+name: Customer Churn
+
+# python_env: python_env.yaml
+
+entry_points:
+  main:
+    parameters:
+      dataset: path
+    command: python train.py {dataset}
